@@ -40,7 +40,6 @@ const Home = () => {
 
     dispatch(getPosts());
   }, [currentId, dispatch]);
-console.log(currentId);
 
   const handleSerachKeyPress = (e) => {
     if (e.keyCode === 13) {

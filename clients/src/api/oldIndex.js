@@ -1,7 +1,7 @@
 import axios from 'axios'
 // here we call API for All Operations Related to POSTs 
-const url = 'https://memories-app-4yvm.vercel.app//posts';
-const authApi = 'https://memories-app-4yvm.vercel.app//auth';
+const url = 'https://memories-app-4yvm.vercel.app/posts';
+const authApi = 'https://memories-app-4yvm.vercel.app/auth';
 
 export const fetchPosts =()=> axios.get(url);
 

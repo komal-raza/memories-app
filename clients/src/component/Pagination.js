@@ -8,7 +8,7 @@ import { getPosts } from "../actions/posts";
 import { useSelector } from "react-redux";
 
 const Paginate = ({ page }) => {
-  console.log("paginate",page)
+  // console.log("paginate",page)
   const classes = useStyles();
   const dispatch = useDispatch();
   const { numberofPages } = useSelector((state) => state.posts);

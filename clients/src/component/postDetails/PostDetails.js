@@ -13,10 +13,8 @@ import { getPost, getSearchPost} from "../../actions/posts.js";
 
 const PostDetails = () => {
   const { post, posts,isLoading } = useSelector((state) => state.posts);
-  const morepost = useSelector((state) => console.log(state));
+  // const morepost = useSelector((state) => console.log(state));
 
-console.log("POST",post)
-console.log("POSTS More",morepost)
 
   const navigate = useNavigate();
   const dispatch = useDispatch();

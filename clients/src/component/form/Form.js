@@ -61,10 +61,10 @@ const Form = ({ currentId, setCurrentId }) => {
       selectedFile: "",
     });
   };
-  console.log("username", user?.result?.name, user?.name);
+  // console.log("username", user?.result?.name, user?.name);
   if (!user) {
     //
-    console.log("1st return");
+    // console.log("1st return");
     return (
       <Paper className={classes.paper}>
         <Typography variant="h6" align="center">
@@ -73,7 +73,7 @@ const Form = ({ currentId, setCurrentId }) => {
       </Paper>
     );
   } else if (!user) {
-    console.log("3rd return");
+    // console.log("3rd return");
     return (
       <Paper className={classes.paper}>
         <Typography variant="h6" align="center">
@@ -82,7 +82,7 @@ const Form = ({ currentId, setCurrentId }) => {
       </Paper>
     );
   }
-  console.log("3rd return");
+  // console.log("3rd return");
   return (
     <>
       <Paper className={classes.paper} elevation={6}>

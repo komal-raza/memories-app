@@ -19,7 +19,7 @@ export const posts = (state = initialState, action) => {
       return { ...state.posts, posts: [...state.posts, action.payload] };
 
     case FETCH:
-      console.log({ ...state, posts: action.payload.data });
+      // console.log({ ...state, posts: action.payload.data });
       return {
         ...state,
         posts: action.payload.data,

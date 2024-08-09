@@ -4,7 +4,7 @@ export const auth = (state = [], action) => {
   switch (action.type) {
      case LOGIN:
 
-      console.log(action?.data);
+      // console.log(action?.data);
       localStorage.setItem("LocalUser", JSON.stringify({ ...action?.data }));
       return { ...state, authData: action?.data };
       

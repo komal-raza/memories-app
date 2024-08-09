@@ -8,7 +8,7 @@ export const getUsers = async (req, res) => {
     // Serach * from PostMessage document
     const data = await UserProfile.find();
 
-    console.log(data);
+    // console.log(data);
 
     res.status(200).json(data);
   } catch (err) {
@@ -58,7 +58,7 @@ export const signupUser = async (req, res) => {
       password: hashPassword,
       name: `${firstName} ${lastName}`,
     });
-    console.log("user data", newUser);
+    // console.log("user data", newUser);
     const token = jwt.sign({ email: newUser?.email, id: newUser._id }, "test", {
       expiresIn: "1h",
     });

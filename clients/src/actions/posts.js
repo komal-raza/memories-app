@@ -10,7 +10,7 @@ export const getPosts = (page) => async (dispatch) => {
     // data here is the post response from fetch post so we use destruct method here
     const { data:{data,currentPage, numberofPages}} = await api.fetchPosts(page);
 
-    console.log("Fetch all posts", {data,currentPage, numberofPages})
+    // console.log("Fetch all posts", {data,currentPage, numberofPages})
     dispatch({
       type: FETCH,
       payload: { data,currentPage, numberofPages}, //data where we store data
@@ -24,7 +24,7 @@ export const getPosts = (page) => async (dispatch) => {
 export const getSearchPost =(searchQuery) => async(dispatch)=>{
   try {
     const { data:{data} } = await api.fetchSearchPost(searchQuery);
-    console.log("Actions",data)
+    // console.log("Actions",data)
     dispatch({ type: FETCH_BY_SEARCH, payload:{ data} });
     dispatch({ type: END_LOADING });
   } catch (error) {

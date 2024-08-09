@@ -4,7 +4,6 @@ import mongoose from "mongoose";
 export const getSearchPost = async (req, res) => {
   const { searchQuery } = req.query;
 
-  console.log(searchQuery,"SEarch query");
   
   try {
     const title = new RegExp(searchQuery, "i");

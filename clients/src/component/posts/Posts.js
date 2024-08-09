@@ -8,7 +8,6 @@ const Posts = ({setCurrentId}) => {
 
   const {posts} = useSelector((state) => state.posts);  //in that hook we access to whole global state/store 
    
-  console.log(posts,"Search POst");
   
   const classes = useStyles();
     //initialize it as hook
