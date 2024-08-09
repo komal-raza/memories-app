@@ -1,14 +1,1 @@
-PORT=8000
-
-
-CONNECTION_URL = mongodb+srv://komal:komal@learningdb.h3mnywp.mongodb.net/memoriedb?retryWrites=true&w=majority
-
-
-
-
-
-
-##mongodb+srv://komal:komal@cluster0.j7sd7.mongodb.net/myFirstDatabase?retryWrites=true&w=majority
-
-
-GOOGLE_CLIENT_ID= 1086613430437-egch9e626s76q5v575rlsebbt771nmvt.apps.googleusercontent.com
+Hello
