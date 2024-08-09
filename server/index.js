@@ -18,7 +18,7 @@ app.use(bodyParser.json({ limit: "10mb", extended: true })); //limit size of pos
 app.use(bodyParser.urlencoded({ limit: "10mb", extended: true }));
 
 const corsOptions = {
-  origin: "http://localhost:3000",
+  origin: "https://memories-app-three.vercel.app/",
   credentials: true, //access-control-allow-credentials:true
   optionSuccessStatus: 200,
 };
