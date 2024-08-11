@@ -16,9 +16,15 @@ app.use(express.json());
 //Setup bodyparser to send requstrs from client to server
 app.use(bodyParser.json({ limit: "10mb", extended: true })); //limit size of post image request
 app.use(bodyParser.urlencoded({ limit: "10mb", extended: true }));
+app.use(function(req, res, next) {
+  res.header("Access-Control-Allow-Origin", "*"); // update to match the domain you will make the request from
+  res.header("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept");
+  next();
+});
 
 const corsOptions = {
-  origin: "https://memories-app-three.vercel.app/",
+  origin: "*",
+  noCors: true,
   credentials: true, //access-control-allow-credentials:true
   optionSuccessStatus: 200,
 };
