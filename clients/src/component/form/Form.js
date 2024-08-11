@@ -20,9 +20,10 @@ const Form = ({ currentId, setCurrentId }) => {
   const classes = useStyles();
   const dispatch = useDispatch();
   // When you need a particular post to update/Edit
+  
   const post = useSelector((state) =>
     currentId //use selector use for fetching all posts
-      ? state.posts.find((p) => p._id === currentId)
+      ? state?.posts?.posts?.find((p) => p?._id === currentId)
       : null
   );
   //   //find the post with specific id for update
